@@ -33,7 +33,10 @@ img {
 
 /* Additional styling for the image, if necessary */
 img {
-    max-width: 50%;
+    max-width: 15%;
+    padding: 60px;
+    padding-bottom: 50px;
+    margin-left: 90px;
     height: auto;
 }
 
@@ -80,5 +83,23 @@ input{
 input:focus{
     border-radius: 6px;
     background-color: rgba(0, 0, 0, 0.301);
+}
+
+img.ders1{
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders1:hover{
+    opacity: 0.5;
+}
+
+img.ders2{
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders2:hover{
+    opacity: 0.5;
 }
 

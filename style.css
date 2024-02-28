@@ -102,3 +102,16 @@ img.ders2{
 img.ders2:hover{
     opacity: 0.5;
 }
+
+img.ders3{
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders3:hover{
+    opacity: 0.5;
+}
+
+p{
+    padding: 10px;
+}

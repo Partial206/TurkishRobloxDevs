@@ -32,6 +32,7 @@ img {
     padding: 35px;
     margin-bottom: -25px; 
     margin-top: -35px;
+    float: left;
 }
 
 img {
@@ -57,22 +58,6 @@ li.konuac a:hover {
     box-shadow: 0 0 20px 5px #22a4e0;
 }
 
-p.foruma{
-    text-align:center;
-    width: 250px;
-    float: right;
-    font-size: larger;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgba(45, 61, 56, 0.911);
-    color: #fff;
-    border-radius: 15px;
-    transition: background-color 0.5s, padding 0.5s;
-}
-
-p.foruma:hover{
-    background-color: rgba(45, 61, 56, 0.801);
-    padding: 3px;
-}
 input{
     border-radius: 4px;
     transition: background-color 0.4s, border-radius 0.5s;
@@ -98,6 +83,7 @@ img.ders1:hover{
 }
 
 img.ders2{
+    padding-top: 100px;
     padding-left: 15px;
     transition:  opacity 0.5s, padding 0.5s;
 }
@@ -107,6 +93,7 @@ img.ders2:hover{
 }
 
 img.ders3{
+    padding-top: 100px;
     padding-left: 15px;
     transition:  opacity 0.5s, padding 0.5s;
 }
@@ -161,5 +148,35 @@ h6:hover{
 }
 
 img.img65{
-    padding-left: 755px;
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders4{
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders5{
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders6{
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders4:hover{
+    opacity: 0.5;
+}
+img.ders5:hover{
+    opacity: 0.5;
+}
+img.ders6:hover{
+    opacity: 0.5;
 }

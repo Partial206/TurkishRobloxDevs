@@ -1,3 +1,6 @@
+body{
+    background-image: linear-gradient(to right, rgb(46, 44, 44) , rgb(129, 127, 127));
+}
 ul {
     list-style-type: none;
     width: 200px;
@@ -31,7 +34,6 @@ img {
     margin-top: -35px;
 }
 
-/* Additional styling for the image, if necessary */
 img {
     max-width: 15%;
     padding: 60px;
@@ -86,6 +88,7 @@ input:focus{
 }
 
 img.ders1{
+    padding-top: 100px;
     padding-left: 15px;
     transition:  opacity 0.5s, padding 0.5s;
 }
@@ -114,4 +117,49 @@ img.ders3:hover{
 
 p{
     padding: 10px;
+}
+
+h2{
+    font-size: 35px;
+    color: #bb2b11;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h3{
+    text-align: center;
+    color: rgb(197, 192, 192);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h4{
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h5{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(197, 192, 192);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h6{
+    font-size: 25px;
+    color: rgb(155, 108, 108);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    width: 250px;
+    transition: box-shadow 0.5s, background-color 0.5s;
+}
+
+h6:hover{
+    box-shadow: 0 0 20px 5px #22a4e0;
+    background-color: #14648a;
+}
+
+img.img65{
+    padding-left: 755px;
 }

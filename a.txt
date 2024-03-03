@@ -1,0 +1,20 @@
+Fonksiyonlar - Turkish Roblox Devs #3
+Fonksyionlar, komutla birden çok kez çalıştırabileceğiniz kod bloklarıdır. Ayrıca bunları eventlere bağlayabilir veya callback olarak atayabilirsiniz.
+Fonksiyonu çağırdığınızda fonksiyonun gövdesi yürütülür. Bir fonksiyonu çağırmak için adını ve ardından parantezleri yazın. Dönüş değerini kabul edecek bir değişken tanımlayabilir veya değişken yerine dönüş değerini kullanabilirsiniz.
+-- Bu fonksiyonun hiçbir parametresi yoktur ve sıfır değeri döndürür
+local function Bireikiekle() -- Fonksiyona bir isim belirledik
+	local sonuc = 1 + 2 -- sonucu bir değişken olarak tanımladık 1 + 2 yani 3
+	print(sonuc) -- sonucu konsola yazdırdık 1+2 yani 3
+end -- Fonksiyonu bitirdik
+-- Bir dönüş olmaksızın fonksiyonu çağırdık.
+Bireikiekle() -- Fonksiyonumuzu çalıştırdık bunun sonucunda konsola 1 + 2 nin sonucunu yani 3 ü konsola yazdırdı.
+Parametreler
+Dademinden beri belki kafanız karışmış olabilir callback, event ve parametre dememden dolayı merak etmeyin ileride anlayacaksınız şimdilik size parametreyi anlatacağım ilk. Parametre, fonksiyonda parantezin içine yazdığımız değişkenlerdir aslında bu değişkenleri Fonksiyonu çağırdığımızda parantezin içine yazarak fonksiyonun içinde çalıştırabiliriz yada fonksiyonu daha çağırmadan once a değişkeni atayıp fonksiyonu çalıştırdığımızda a nın değeri 1 olarak atayıp içindeki işlemleri a nın 1 değerine göre ayarlayabiliriz. Aşağıda örnekleri bulunmakta:
+-- This function has two parameters: num1 and num2
+local function Toplama(sayi1, sayi2)
+	print(sayi1 + sayi2)
+end
+
+Toplama(2, 3) -- Yukarda anlattığım şeyleri başarıyla yerine getirdik ve toplama işlemini tamamladık burda ise sonuç 5 çıkacak konsola 5 yazdıracak
+Toplama(5, 6, 7) -- Cevap 11 çıkacaktır çünkü 7 yi sayi3 olarak asla tanımlamadık fonksiyon içinde
+Toplama(9) -- nil ile 9 u topladığımızda 9 çıkacak nil 0 etkisiz elemandıra

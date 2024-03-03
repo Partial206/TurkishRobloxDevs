@@ -1,0 +1,124 @@
+/* test.css dosyanıza ekleyin veya var olan stil dosyanıza ekleyin */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 30px;
+    transition: background-color 0.5s, padding 0.5s;;
+}
+
+nav li:hover{
+    padding: 5px 6px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+main section {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    overflow-y: auto; /* Yeni eklenen satır */
+    max-height: 750px; /* Yeni eklenen satır */
+    max-width: 10000px;
+}
+
+/* Diğer stiller */
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Diğer stiller */
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    transition: left 0.5s;
+}
+
+.sidebar:hover {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
+    display: block;
+    transition: font-size 0.5s, color 0.5s;
+}
+
+.sidebar a:hover {
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Diğer stiller */

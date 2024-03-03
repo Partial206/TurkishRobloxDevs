@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Roblox Devs - Temel Komutlar</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="icon" type="trd4.png" href="trd4.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Turkish Roblox Devs</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="variables.html">Değişkenler</a></li>
+                <li><a href="temelkomutlar.html">Temel Komutlar</a></li>
+                <li><a href="fonksiyonlar.html">Fonksiyonlar</a></li>
+                <li><a href="#kaynaklar">Kaynaklar</a></li>
+                <!-- Başka dökümanlar ekleyebilirsiniz -->
+            </ul>
+        </nav>
+
+        <main>
+            <section id="giris">
+                <h2>Turkish Roblox Devs - Temel Komutlar #2</h2>
+                <p>Benim burda kastetmek istediğim print, aritmetik operatörler, if, else, elseif. bugün sizlere bunları burda yazı olarak nasıl yeteri kadar anlatılıyorsa anlatacağım.
+                </p>
+                <br>
+                <h2>
+                    Print
+                </h2>
+                <br>
+                <p>Print basit haliyle ekrana / konsola istediğimiz bir değeri yada yazıyı yazdırmaktır örnekleri aşağıda</p>
+                <br>
+                <h3>
+                    print("Merhaba Dünya") -- konsol : Merhaba Dünya
+                    <br>
+local x = 10 -- x'i 10 olarak atadık
+<br>
+print(x) -- konsol : 10
+<br>
+local y = 5 -- y'yi 5 olarak atadık
+<br>
+print(y) -- konsol : 5
+<br>
+local z = false -- z'yi false olarak atadık
+<br>
+print(z) -- konsol : false
+<br>
+local a = true -- a'yı true olarak atadık
+<br>
+print(a) -- konsol : true
+<br>
+                </h3>
+                <br>
+                <h2>Arimetik Oparetörler</h2>
+                <br>
+                <p>Arimetik opertatörleri hepimiz biliyoruz değilmi toplama,çıkarma,bolme ve çarpma daha fazlası farklı şekillerde var fakat şuan bunu işlemeyeceğiz. Aşağıda kodda nasıl aritmetik operatörleri kullanacağınızı gösterdim lütfen bi inceleyin.
+                </p>
+                <br>
+                <h3>
+                    local x = 5 -- x'i 5 olarak atadık
+                    <br>
+local y = 3 -- y'yi 3 olarak atadık
+<br>
+
+print(y + x) -- Toplama, konsola 5+3 yani 8 i yazdıracak
+<br>
+
+local x = 10 -- x'i 10 olarak atadık
+<br>
+local y = 2  -- y'yi 2 olarak atadık
+<br>
+
+-- Not : Biz kodda çarpma işaretini x veya . yerine * olarak kullanırız.
+<br>
+print(x*y) -- Çarpma, konsola 10 x 2 yani 20'yi yazdıracak
+<br>
+
+-- Not : Biz bölme işaretini kodda "/" olarak kullanırız
+<br>
+print(x/y) -- Bölme, konsola 10 bölü 2 yani 5 i yazdıracak
+<br>
+
+print(x-y) -- Çıkartma, konsola 10 - 2 yani 8 i yazdıracak
+<br>
+                </h3>
+                <br>
+                <h2>İf,else,elseif</h2>
+                <br>
+                <p>İf türkçede eğer demektir, else ise "aksi halde" yada "yoksa" anlamlarına gelir, elseif ise sorgu cümlesidir birden fazla if yazmak yerine if ve elseif i kullanarak bir katmandan hepsini yönetebiliriz aşağıda örneklerini verdim.
+                </p>
+                <br>
+                <h3>
+                    local y = false
+                    <br>
+local x = true
+<br>
+local z = math.random(0,4)
+<br>
+<br>
+if y == false then
+<br>
+	print("y'nin değeri false")
+    <br>
+else
+<br>
+	print("y'nin değeri true")
+    <br>
+end
+<br>
+<br>
+
+if x == true then
+<br>
+	print("x'in değeri true")
+    <br>
+else
+<br>
+	print("x'in değeri false")
+    <br>
+end
+<br>
+<br>
+
+if z == 1 then
+<br>
+	print("z 1 çıktı!")
+    <br>
+elseif z == 2 then
+<br>
+	print("z 2 çıktı!")
+    <br>
+elseif z == 3 then
+<br>
+	print("z 3 çıktı!")
+    <br>
+else
+<br>
+	print("z 1 ile 3 arasında bir değer çıkmadı")
+    <br>
+end
+<br>
+                </h3>
+
+                <p>Okuduğunuz için teşekkür ederim 
+                    <br>
+                    Discord : .partial.</p>
+                <h2>Kaynak : <a href="https://create.roblox.com/docs/luau/variables">Link</a></h2>
+            </section>
+            <!-- Diğer bölümleri ekleyebilirsiniz -->
+        </main>
+    </div>
+
+    <footer>
+        <p>2024 Turkish Roblox Devs</p>
+    </footer>
+
+</body>
+</html>

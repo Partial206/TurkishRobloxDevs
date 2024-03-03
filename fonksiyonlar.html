@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Roblox Devs - Temel Komutlar</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="icon" type="trd4.png" href="trd4.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Turkish Roblox Devs</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="variables.html">Değişkenler</a></li>
+                <li><a href="temelkomutlar.html">Temel Komutlar</a></li>
+                <li><a href="fonksiyonlar.html">Fonksiyonlar</a></li>
+                <li><a href="#kaynaklar">Kaynaklar</a></li>
+                <!-- Başka dökümanlar ekleyebilirsiniz -->
+            </ul>
+        </nav>
+
+        <main>
+            <section id="giris">
+                <h2>Turkish Roblox Devs - Fonksiyonlar #3</h2>
+                <p>Fonksyionlar, komutla birden çok kez çalıştırabileceğiniz kod bloklarıdır. Ayrıca bunları eventlere bağlayabilir veya callback olarak atayabilirsiniz.
+                    Fonksiyonu çağırdığınızda fonksiyonun gövdesi yürütülür. Bir fonksiyonu çağırmak için adını ve ardından parantezleri yazın. Dönüş değerini kabul edecek bir değişken tanımlayabilir veya değişken yerine dönüş değerini kullanabilirsiniz.
+                    </p>
+                <h3>
+                    -- Bu fonksiyonun hiçbir parametresi yoktur ve sıfır değeri döndürür
+                    <br>
+                    <br>
+local function Bireikiekle() -- Fonksiyona bir isim belirledik
+<br>
+	local sonuc = 1 + 2 -- sonucu bir değişken olarak tanımladık 1 + 2 yani 3
+    <br>
+	print(sonuc) -- sonucu konsola yazdırdık 1+2 yani 3
+    <br>
+end -- Fonksiyonu bitirdik
+<br>
+<br>
+-- Bir dönüş olmaksızın fonksiyonu çağırdık.
+<br>
+Bireikiekle() -- Fonksiyonumuzu çalıştırdık bunun sonucunda konsola 1 + 2 nin sonucunu yani 3 ü konsola yazdırdı.
+
+                </h3>
+<br>
+<h2>Parametreler</h2>
+<p>Dademinden beri belki kafanız karışmış olabilir callback, event ve parametre dememden dolayı merak etmeyin ileride anlayacaksınız şimdilik size parametreyi anlatacağım ilk. Parametre, fonksiyonda parantezin içine yazdığımız değişkenlerdir aslında bu değişkenleri Fonksiyonu çağırdığımızda parantezin içine yazarak fonksiyonun içinde çalıştırabiliriz yada fonksiyonu daha çağırmadan once a değişkeni atayıp fonksiyonu çalıştırdığımızda a nın değeri 1 olarak atayıp içindeki işlemleri a nın 1 değerine göre ayarlayabiliriz. Aşağıda örnekleri bulunmakta:</p>
+<h3>local function Toplama(sayi1, sayi2)
+    <br>
+	print(sayi1 + sayi2)
+    <br>
+end
+<br>
+<br>
+
+Toplama(2, 3) -- Yukarda anlattığım şeyleri başarıyla yerine getirdik ve toplama işlemini tamamladık burda ise sonuç 5 çıkacak konsola 5 yazdıracak
+<br>
+Toplama(5, 6, 7) -- Cevap 11 çıkacaktır çünkü 7 yi sayi3 olarak asla tanımlamadık fonksiyon içinde
+<br>
+Toplama(9) -- nil ile 9 u topladığımızda 9 çıkacak nil 0 etkisiz elemandır</h3>
+<br>
+<h2>Return</h2>
+<p>Fonksiyonun gövdesinde, return anahtar sözcüğü bir hesaplamanın sonucunu döndürür. Bir fonksiyondan birden fazla değer döndürebilirsiniz. return, işlevin yürütülmesini bitirir ve Luau, end anahtar sözcüğünün return ifadelerini takip etmesini bekler, bu nedenle, return komutu ile end komutu arasına kod yazmak bir hataya neden olur. -- Roblox Docs Çeviri
+    <br>
+    <br>
+    -- Turkish Roblox Devs Ekibinin açıklaması :
+    <br>
+    <br>
+    Return fonksiyonda oluşturduğumuz herhangi bir değişkenin değerini fonksiyonda parametrelerin içine koyduğumuz değerleri fonksiyon(sayi1,sayi2) mesela bunun ikisini toplayan bi değer oluştursak ve değeri returnlasak direk fonksiyon(1,2) diye çağırsak fonksiyonumuzu bize değeri 3 olarak verecektir hatta bunu aşağıdaki gibi print(fonksiyon(1,2)) diyede kullanabiliriz.
+    </p>
+    <h3>
+    <br>
+    -- Bir fonksiyon oluşturduk parametreleri sayi1 ve sayi2 olan
+    <br>
+local function Toplama(sayi1, sayi2)
+<br>
+	local sonuc = sayi1 + sayi2
+    <br>
+	return sonuc 
+    <br>
+end
+<br>
+
+print(Toplama(1, 2)) -- 3
+<br>
+local yedi = Toplama(3, 4)
+<br>
+print(yedi) -- 7
+<br>
+<br>
+
+-- burdada 2 tane fonksiyon içi değişkeni returnlayıp aynı anda çalıştırabiliyoruz
+<br>
+local function = Islemyap(sayi1 , sayi2)
+<br>
+	local toplama = sayi1 + sayi2
+    <br>
+	local cikartma = sayi1 - sayi2
+    <br>
+	return toplama , cikartma 
+    <br>
+end
+<br>
+<br>
+
+-- 2 tane değişken oluşturduk 2 değişkenede fonksiyonu çağırdık cikarmada cikartma işlemi yapacak 2 sayi arasında eğerki toplamayı seçseydik bu sefer seçtiğimiz 2 sayiyi toplayıp değişkenin değeri olarak belirlicekti
+<br>
+local toplama, cikarma= Islemyap(2, 3)
+<br>
+print(toplama) -- 5
+<br>
+print(cikarma) -- -1
+<br>
+</h3>
+<h2>Callbackler...</h2>
+<h2>Teknikler...</h2>
+<p>Bir sonraki derste.</p>
+<br>
+                <p>Okuduğunuz için teşekkür ederim 
+                    <br>
+                    Discord : .partial.</p>
+                <h2>Kaynak : <a href="https://create.roblox.com/docs/luau/functions">Link</a></h2>
+            </section>
+            <!-- Diğer bölümleri ekleyebilirsiniz -->
+        </main>
+    </div>
+
+    <footer>
+        <p>2024 Turkish Roblox Devs</p>
+    </footer>
+
+</body>
+</html>

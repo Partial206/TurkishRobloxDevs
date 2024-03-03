@@ -1,0 +1,182 @@
+body{
+    background-image: linear-gradient(to right, rgb(46, 44, 44) , rgb(129, 127, 127));
+}
+ul {
+    list-style-type: none;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    filter: grayscale(100%);
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+    text-decoration: none;
+    background-color: rgb(197, 51, 51);
+    transition: background-color 0.5s, padding 0.5s;
+}
+
+li a:hover {
+    filter: grayscale(25%);
+    text-shadow: #000000;
+    background-color: rgba(197, 51, 51, 0.801);
+    box-shadow: 0 0 20px 5px #bb2b11;
+    padding: 17px 16px;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 35px;
+    margin-bottom: -25px; 
+    margin-top: -35px;
+    float: left;
+}
+
+img {
+    max-width: 15%;
+    padding: 60px;
+    padding-bottom: 50px;
+    margin-left: 90px;
+    height: auto;
+}
+
+li.konuac {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+li.konuac a {
+    background-color: rgb(51, 105, 197);    
+}
+
+li.konuac a:hover {
+    background-color: rgba(51, 105, 197, 0.801);
+    box-shadow: 0 0 20px 5px #22a4e0;
+}
+
+input{
+    border-radius: 4px;
+    transition: background-color 0.4s, border-radius 0.5s;
+    margin-top: -25px;
+    float: right;
+    margin-right: -219px;
+    padding: 5px;
+}
+
+input:focus{
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+img.ders1{
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders1:hover{
+    opacity: 0.5;
+}
+
+img.ders2{
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders2:hover{
+    opacity: 0.5;
+}
+
+img.ders3{
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders3:hover{
+    opacity: 0.5;
+}
+
+p{
+    padding: 10px;
+}
+
+h2{
+    font-size: 35px;
+    color: #bb2b11;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h3{
+    text-align: center;
+    color: rgb(197, 192, 192);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h4{
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h5{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(197, 192, 192);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h6{
+    font-size: 25px;
+    color: rgb(155, 108, 108);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    width: 250px;
+    transition: box-shadow 0.5s, background-color 0.5s;
+}
+
+h6:hover{
+    box-shadow: 0 0 20px 5px #22a4e0;
+    background-color: #14648a;
+}
+
+img.img65{
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders4{
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders5{
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders6{
+    padding-top: 100px;
+    padding-left: 15px;
+    transition:  opacity 0.5s, padding 0.5s;
+}
+
+img.ders4:hover{
+    opacity: 0.5;
+}
+img.ders5:hover{
+    opacity: 0.5;
+}
+img.ders6:hover{
+    opacity: 0.5;
+}

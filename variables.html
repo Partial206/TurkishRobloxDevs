@@ -1,19 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Turkish Roblox Devs - Değişkenler</title>
+    <link rel="stylesheet" href="test.css">
     <link rel="icon" type="trd4.png" href="trd4.png">
-    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="about.html">Hakkımızda</a></li>
-        <li><a href="forum.html">Docs</a></li>
-        <li class="konuac"><a href="konuac.html">Konu Aç</a></li>
-    </ul>
+
+    <header>
+        <div class="container">
+            <h1>Turkish Roblox Devs</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="variables.html">Değişkenler</a></li>
+                <li><a href="temelkomutlar.html">Temel Komutlar</a></li>
+                <li><a href="fonksiyonlar.html">Fonksiyonlar</a></li>
+                <li><a href="#kaynaklar">Kaynaklar</a></li>
+                <!-- Başka dökümanlar ekleyebilirsiniz -->
+            </ul>
+        </nav>
+
+        <main>
+            <section id="giris">
+                <h2>Turkish Roblox Devs - Değişkenler #1</h2>
+                <p>Değişken, bir değeri tutan bir addır. Değişken değerler sayılar, dizeler, boolean'lar, veri türleri ve daha fazlası olabilir.
+                </p>
+                <h3>
+                    <br>
+                <br>
+                local bosyaninil
+                <br>
+                local sayi1 = 10
+                <br>
+                local kelime = "Merhaba"
+                <br>
+                local referans = workspace.Camera
+                <br>
+
+                print(nilVar) --> konsol : nil ( belirsiz değişken )
+                <br>
+                print(sayi1) --> konsol : 10
+                <br>
+                print(kelime) --> konsol :  Merhaba
+                <br>
+                print(referans) --> konsol : Camera (Kameranın uzantısına atacaktır eğer konsoldan ismine tıklar iseniz)
+                </h3>
+                <p>Değişken isimlerinde Türkçe karakter kullanmamalıyız; daha doğrusu, sadece stringlerde değişkenin değerini yazarken 'Türkçe' yazabiliriz. Türkçe yazarken içinde Türkçe karakter olduğunu biliyorsunuzdur. İngilizce alfabesinde bizde bulunan “ç, ğ, ö, ş, ı ve ü” harfleri bulunmaz, bu yüzden değerlerin ismine yazamayız.</p>
+                <h2>Çoklu Değişkenler</h2>
+                <h3>
+                local a, b, c = 1, 2, 3 
+                <br>
+                local d, e, f = 4, 5 --> ekstra değişken
+                <br>
+                local g, h = 7, 8, 9 --> ekstra değer
+                <br>
+
+                print(a, b, c) --> konsol : 1, 2, 3
+                <br>
+                print(d, e, f) --> konsol : 4, 5, nil (Biz sadece d ile e yi belirttiğimiz için f yi otomatik olarak nil algılıyor yani belirsiz olarak algılıyor )
+                <br>
+                print(g, h) --> konsol : 7, 8 ( g ile h yi belirlemişiz fakat oraya ekstra bir değer de koymuşuz ona bir değişken atamadığımız için onu yazdırmayacak )
+                </h3>
+                <h2>Değişken Değerini Değiştirme</h2>
+                <p>Bir değişkenin değerini değiştirmek için ona başka bir değer atayın.</p>
+                <br>
+                <h3>
+                local x, y = 10, 20
+                <br>
+                print(x) -- 10
+                <br>
+                print(y) -- 20
+                <br>
+
+                local x = 1000 --> 10 olarak atadığımız x i kodun devamında 1000 olarak tekrar atadık
+                <br>
+                local y = 2000 --> 20 olarak atadığımız y i kodun devamında 2000 olarak tekrar atadık
+                <br>
+                print(x) --> konsol : 1000
+                <br>
+                print(y) --> konsol :  2000
+                </h3>
+                <p>Okuduğunuz için teşekkür ederim 
+                    <br>
+                    Discord : .partial.</p>
+                <h2>Kaynak : <a href="https://create.roblox.com/docs/luau/variables">Link</a></h2>
+            </section>
+            <!-- Diğer bölümleri ekleyebilirsiniz -->
+        </main>
+    </div>
+
+    <footer>
+        <p>2024 Turkish Roblox Devs</p>
+    </footer>
+
 </body>
 </html>
